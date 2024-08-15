@@ -1,8 +1,10 @@
+import AnimatedLetters from "./animatedLetters";
+
 export default function Hero() {
   return (
     <div className="relative hero bg-base-200 min-h-screen flex flex-col sm:flex-row justify-center sm:justify-around  text-center sm:text-start overflow-hidden">
       <HeroBackground />
-      <div className="hero-content relative z-30">
+      <div className="hero-content relative z-40 basis-1/2">
         <div className="max-w-2xl">
           <h1 className="text-3xl sm:text-5xl lg:text-7xl font-bold">
             I can help you{" "}
@@ -17,7 +19,9 @@ export default function Hero() {
           <button className="btn btn-primary">Let's talk</button>
         </div>
       </div>
-      <div>Extra</div>
+      <div className="relative h-screen basis-1/2 z-30 flex justify-center items-center mix-blend-overlay">
+        <AnimatedLetters />
+      </div>
     </div>
   );
 }
