@@ -1,9 +1,10 @@
+import Hero from "@/components/ui/hero";
 import Image from "next/image";
 
 export default function Home() {
   return (
     <main>
-      <h1>Getting started</h1>
+      <Hero />
     </main>
   );
 }
