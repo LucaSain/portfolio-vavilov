@@ -4,9 +4,9 @@ export default function Hero() {
   return (
     <div className="relative hero bg-base-200 min-h-screen flex flex-col sm:flex-row justify-center sm:justify-around  text-center sm:text-start overflow-hidden">
       <HeroBackground />
-      <div className="hero-content relative z-40 basis-1/2">
+      <div className="hero-content relative z-40 max-w-[60vw]">
         <div className="max-w-2xl">
-          <h1 className="text-3xl sm:text-5xl lg:text-7xl font-bold">
+          <h1 className="text-3xl sm:text-5xl lg:text-8xl font-bold">
             I can help you{" "}
             <span className="bg-clip-text bg-gradient-to-l from-primary to-secondary via-accent text-transparent">
               achieve whatever
@@ -16,7 +16,7 @@ export default function Hero() {
           <p className="text-sm py-6">
             except stuff that would get us in trouble
           </p>
-          <button className="btn btn-primary">Let's talk</button>
+          <button className="btn btn-primary btn-lg">Let&apos;s talk</button>
         </div>
       </div>
       <div className="relative h-screen basis-1/2 z-30 flex justify-center items-center mix-blend-overlay">

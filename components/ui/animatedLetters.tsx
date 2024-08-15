@@ -61,13 +61,13 @@ export default function AnimatedLetters() {
     <div className="z-[999] h-1/3 w-1/3">
       {svgs.map((svg, i) => (
         <div
+          key={i}
           className="h-full w-full absolute top-0 left-0"
           style={{
             transform: `translateY(${svg.translateY}px) scale(${svg.scale})`,
           }}
         >
           <svg
-            key={i}
             style={{
               transform: `scale(${svg.scale})`,
             }}
@@ -88,7 +88,7 @@ export default function AnimatedLetters() {
               }}
             >
               {svg.paths.map((path, j) => (
-                <AnimatePresence>
+                <AnimatePresence key={j}>
                   {index === i && (
                     <motion.path
                       onAnimationComplete={async () => {
@@ -96,7 +96,6 @@ export default function AnimatedLetters() {
                           setIndex((i + 1) % svgs.length)
                         );
                       }}
-                      key={j}
                       d={path}
                       initial="hidden"
                       animate="visible"
