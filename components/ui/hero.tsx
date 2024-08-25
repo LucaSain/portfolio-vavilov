@@ -6,21 +6,31 @@ export default function Hero() {
       <HeroBackground />
       <div className="hero-content relative z-40 max-w-[60vw]">
         <div className="max-w-2xl">
-          <h1 className="text-3xl sm:text-5xl lg:text-8xl font-bold">
-            I can help you{" "}
-            <span className="bg-clip-text bg-gradient-to-l from-primary to-secondary via-accent text-transparent">
-              achieve whatever
-            </span>{" "}
-            you want
+          <h1 className="text-3xl sm:text-5xl lg:text-7xl font-bold">
+            Alacrity.
+            <br />
+            <span className="text-2xl sm:text-4xl lg:text-6xl ">
+              Our <span className="text-secondary">stories</span>
+            </span>
           </h1>
-          <p className="text-sm py-6">
-            except stuff that would get us in trouble
-          </p>
-          <button className="btn btn-primary btn-lg">Let&apos;s talk</button>
+          <p className="py-6 text-2xl">Read what's been happening lately</p>
         </div>
       </div>
       <div className="relative h-screen basis-1/2 z-30 flex justify-center items-center mix-blend-overlay">
         <AnimatedLetters />
+      </div>
+      <div className="custom-shape-divider-bottom-1724584304">
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M1200 120L0 16.48 0 0 1200 0 1200 120z"
+            className="shape-fill"
+          ></path>
+        </svg>
       </div>
     </div>
   );
@@ -44,7 +54,7 @@ const HeroBackground = () => {
               height="140%"
               filterUnits="objectBoundingBox"
               primitiveUnits="userSpaceOnUse"
-              color-interpolation-filters="linearRGB"
+              colorInterpolationFilters="linearRGB"
             >
               <feTurbulence
                 type="fractalNoise"
@@ -62,7 +72,7 @@ const HeroBackground = () => {
                 surfaceScale="15"
                 specularConstant="0.75"
                 specularExponent="20"
-                lighting-color="#ffffff"
+                lightingColor="#ffffff"
                 x="0%"
                 y="0%"
                 width="100%"

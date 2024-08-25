@@ -1,19 +1,19 @@
 export default function Navbar() {
   const links = [
     {
-      name: "Blog",
+      name: "English",
       url: "#",
     },
     {
-      name: "Projects",
-      url: "#",
-    },
-    {
-      name: "Achievements",
+      name: "Romanian",
       url: "#",
     },
     {
       name: "Shop",
+      url: "#",
+    },
+    {
+      name: "Authors",
       url: "#",
     },
   ];
@@ -49,7 +49,7 @@ export default function Navbar() {
             ))}
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl">[Alacrity] Vavilov Iris</a>
+        <a className="btn btn-ghost text-xl">Alacrity Blog</a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
@@ -60,9 +60,7 @@ export default function Navbar() {
           ))}
         </ul>
       </div>
-      <div className="navbar-end">
-        <a className="btn btn-circle btn-lg">🇷🇴</a>
-      </div>
+      <div className="navbar-end"></div>
     </div>
   );
 }
