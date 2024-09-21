@@ -3,13 +3,13 @@ import Image from "next/image";
 export default function TeamSection() {
   return (
     <>
-      <div className="h-full w-full p-6 py-10 pb-0 bg-gradient-to-b from-base-100 to-accent via-base-100">
+      <div className="h-full w-full p-6 py-10 pb-0  bg-gradient-to-b from-base-100 to-accent via-base-100">
         <h1 className="text-5xl font-bold py-2">
           The magic, it's all from over here.
         </h1>
         <p className="text-xl mt-2">Meet the authors behind Alacrity:</p>
 
-        <div className="p-4 py-10 rounded-xl grid gap-2 grid-cols-3">
+        <div className="p-4 py-10 rounded-xl grid gap-2 grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
           {Array.from(Array(6).keys()).map((teamMember) => (
             <TeamMemberCard key={teamMember} teamMember={teamMembers[0]} />
           ))}

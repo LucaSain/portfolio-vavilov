@@ -1,0 +1,120 @@
+{
+    "reqId": "MGsM8hSDXb8gO4UVwVtY",
+    "level": 3,
+    "time": "2024-09-10T10:28:56+00:00",
+    "remoteAddr": "127.0.0.1",
+    "user": "--",
+    "app": "remote",
+    "method": "GET",
+    "url": "/status.php",
+    "message": "Permission denied",
+    "userAgent": "Mozilla/5.0 (Macintosh) mirall/3.13.3stable (build 25180) (Nextcloud, osx-23.4.0 ClientArchitecture: arm64 OsArchitecture: arm64)",
+    "version": "29.0.6.1",
+    "exception": {
+        "Exception": "RedisException",
+        "Message": "Permission denied",
+        "Code": 0,
+        "Trace": [
+            {
+                "file": "/var/www/nextcloud/lib/private/RedisFactory.php",
+                "line": 123,
+                "function": "pconnect",
+                "class": "Redis",
+                "type": "->"
+            },
+            {
+                "file": "/var/www/nextcloud/lib/private/RedisFactory.php",
+                "line": 167,
+                "function": "create",
+                "class": "OC\\RedisFactory",
+                "type": "->",
+                "args": [
+                    "*** sensitive parameters replaced ***"
+                ]
+            },
+            {
+                "file": "/var/www/nextcloud/lib/private/Memcache/Redis.php",
+                "line": 73,
+                "function": "getInstance",
+                "class": "OC\\RedisFactory",
+                "type": "->"
+            },
+            {
+                "file": "/var/www/nextcloud/lib/private/Memcache/Redis.php",
+                "line": 79,
+                "function": "getCache",
+                "class": "OC\\Memcache\\Redis",
+                "type": "->"
+            },
+            {
+                "file": "/var/www/nextcloud/lib/private/App/InfoParser.php",
+                "line": 56,
+                "function": "get",
+                "class": "OC\\Memcache\\Redis",
+                "type": "->"
+            },
+            {
+                "file": "/var/www/nextcloud/lib/private/App/AppManager.php",
+                "line": 727,
+                "function": "parse",
+                "class": "OC\\App\\InfoParser",
+                "type": "->"
+            },
+            {
+                "file": "/var/www/nextcloud/lib/private/AppFramework/App.php",
+                "line": 72,
+                "function": "getAppInfo",
+                "class": "OC\\App\\AppManager",
+                "type": "->"
+            },
+            {
+                "file": "/var/www/nextcloud/lib/private/legacy/OC_App.php",
+                "line": 157,
+                "function": "buildAppNamespace",
+                "class": "OC\\AppFramework\\App",
+                "type": "::"
+            },
+            {
+                "file": "/var/www/nextcloud/lib/private/AppFramework/Bootstrap/Coordinator.php",
+                "line": 119,
+                "function": "registerAutoloading",
+                "class": "OC_App",
+                "type": "::"
+            },
+            {
+                "file": "/var/www/nextcloud/lib/private/AppFramework/Bootstrap/Coordinator.php",
+                "line": 90,
+                "function": "registerApps",
+                "class": "OC\\AppFramework\\Bootstrap\\Coordinator",
+                "type": "->"
+            },
+            {
+                "file": "/var/www/nextcloud/lib/base.php",
+                "line": 714,
+                "function": "runInitialRegistration",
+                "class": "OC\\AppFramework\\Bootstrap\\Coordinator",
+                "type": "->"
+            },
+            {
+                "file": "/var/www/nextcloud/lib/base.php",
+                "line": 1189,
+                "function": "init",
+                "class": "OC",
+                "type": "::"
+            },
+            {
+                "file": "/var/www/nextcloud/status.php",
+                "line": 39,
+                "args": [
+                    "/var/www/nextcloud/lib/base.php"
+                ],
+                "function": "require_once"
+            }
+        ],
+        "File": "/var/www/nextcloud/lib/private/RedisFactory.php",
+        "Line": 123,
+        "message": "Permission denied",
+        "exception": {},
+        "CustomMessage": "Permission denied"
+    }
+}

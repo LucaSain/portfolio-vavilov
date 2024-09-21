@@ -42,7 +42,7 @@ export default function RecentPosts() {
 
 const BlogCard = () => {
   return (
-    <div className="p-4 flex flex-row">
+    <div className="p-4 flex flex-col sm:flex-row">
       <div className="h-40 max-w-64 bg-white rounded-sm">
         <Image
           src="/iris.png"
