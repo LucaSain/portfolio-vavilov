@@ -13,7 +13,9 @@ export default function Hero() {
               Our <span className="text-secondary">stories</span>
             </span>
           </h1>
-          <p className="py-6 text-2xl">Read what's been happening lately</p>
+          <p className="py-6 text-2xl">
+            Read what&apos;s been happening lately
+          </p>
         </div>
       </div>
       <div className="relative h-screen basis-1/2 z-30 flex justify-center items-center mix-blend-overlay">

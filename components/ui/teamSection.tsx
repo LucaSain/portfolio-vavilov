@@ -5,7 +5,7 @@ export default function TeamSection() {
     <>
       <div className="h-full w-full p-6 py-10 pb-0  bg-gradient-to-b from-base-100 to-accent via-base-100">
         <h1 className="text-5xl font-bold py-2">
-          The magic, it's all from over here.
+          The magic, it&apos;s all from over here.
         </h1>
         <p className="text-xl mt-2">Meet the authors behind Alacrity:</p>
 
@@ -33,8 +33,12 @@ const teamMembers: Array<TeamMember> = [
   {
     name: "Vavilov Iris",
     roles: [
-      <div className="badge badge-primary">Founder</div>,
-      <div className="badge badge-accent">CEO</div>,
+      <div key="vavilov1" className="badge badge-primary">
+        Founder
+      </div>,
+      <div key="vavilov2" className="badge badge-accent">
+        CEO
+      </div>,
     ],
     symbol: {
       viewBox: "0 0 400 400",
